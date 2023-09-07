@@ -1,5 +1,5 @@
 package section_1;
-
+// Video 1 and 2 covered
 public class video1 {
     /**
      * 1 -> Playwright handles the modern webApps with Auto-wait capability

@@ -1,5 +1,6 @@
 package section_1;
 // Video 1 and 2 covered
+// No need to watch Video 3 again
 public class video1 {
     /**
      * 1 -> Playwright handles the modern webApps with Auto-wait capability
@@ -28,5 +29,6 @@ public class video1 {
      * -----------------------------------------------------------------------
      * PlayWright provides inspector tool.
      * -----------------------------------------------------------------------
+     * PlayWright by default developed in NodeJS platform
      * */
 }

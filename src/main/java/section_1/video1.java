@@ -24,7 +24,9 @@ public class video1 {
      * PlayWright-TypeScript
      * -----------------------------------------------------------------------
      * PlayWright have one imp feature called Traces. --> Which help us to take Screenshot , test video recording,
-     * flaky test retry and Logging.
-     *
-     */
+     * flaky test retry and Logging.  [in built feature]
+     * -----------------------------------------------------------------------
+     * PlayWright provides inspector tool.
+     * -----------------------------------------------------------------------
+     * */
 }

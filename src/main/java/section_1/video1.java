@@ -16,5 +16,15 @@ public class video1 {
      * so in other automation tools the moment appears it will try to click on it, may be by that time it is not
      * in a stable mode or fully visible then you will run into errors.
      * But in PlayWright first it will CHECK all the state then after it will continue.
+     * -----------------------------------------------------------------------
+     * PlayWright-JAVA
+     * PlayWright-JS
+     * PlayWright-C#
+     * PlayWright-Python
+     * PlayWright-TypeScript
+     * -----------------------------------------------------------------------
+     * PlayWright have one imp feature called Traces. --> Which help us to take Screenshot , test video recording,
+     * flaky test retry and Logging.
+     *
      */
 }

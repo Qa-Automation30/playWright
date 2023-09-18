@@ -9,11 +9,25 @@
 // like this --> const {test} = require('@playwright/test');
 // This is like JAR files like Selenium JARs
 // So we are importing test annoation from PlayWright Jars
+// So this is a kind of first requirement to import it.
 const {test} = require('@playwright/test');
 
 // As you need to write the TC so you need to follow this kind of process or can say you have to write like this.
 // so here 'test' is taking two param-> one is your 'test case name' and second one is 'function'.
+// So inside that function you need to write your Automation code.
 test("first playWright TC",function(){
+// So inside that you can write your playWright code...
+// Second Imp point is -> Java Script is Asynchronous -> What does it mean ?--> It means that in JS code will not execute in sequence.
+// It means that line by line.
+/**
+ *  Suppose in your code there are 3 steps like this ->
+ * // Step 1
+ * // Step 2
+ * // Step 3
+ * So in JS there is no confirmation that all steps run in a sequence as it is written.
+ * IN JS all steps are executed at the same time as you run the code.
+ * =========================================================================================
+ */
 
-
-});
+}
+);

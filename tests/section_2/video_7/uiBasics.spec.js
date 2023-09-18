@@ -39,5 +39,4 @@ test("second test case playWright TC",async function(){
     await PageTransitionEvent;  // This is kind of example
     // So this "aysnch" and "await" comes in combination.
     // "await" will only activated once you marked the function "async". if you miss "async" then there is no use of "await" 
-    }
-    );
+});

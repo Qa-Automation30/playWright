@@ -25,9 +25,19 @@ test("first playWright TC",function(){
  * // Step 2
  * // Step 3
  * So in JS there is no confirmation that all steps run in a sequence as it is written.
- * IN JS all steps are executed at the same time as you run the code.
+ * IN JS all steps are executed at the same time as you run the code. So may be chance that your execution may break.
  * =========================================================================================
+ * So how to handle that situation :--> So for every step you need to tell JS that you have to wait some time until step gets completed
+ * So for that you need to use one keyWorod before each and evey step, which is "await". -->   "await step 1"
+ * ========================================================================================================
+ * So when every you use "await" inside the function, that means you are telling that the code is asynchronous.
+ * so when you put await "inside" the code then you have to represent that function "async" like below-->
  */
-
 }
 );
+test("second test case playWright TC",async function(){
+    await PageTransitionEvent;  // This is kind of example
+    // So this "aysnch" and "await" comes in combination.
+    // "await" will only activated once you marked the function "async". if you miss "async" then there is no use of "await" 
+    }
+    );

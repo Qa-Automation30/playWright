@@ -1,11 +1,15 @@
 /**
- * Handling dropdown, checkbox and radioButton
+ * What is playWright inspector ?-->> and how we can use it.
+ * playWright inspector is used for debug purposes.
+ * but the question is how to do it ->
+ * So you use  this command ->  "npx playwright test video_17 --debug" to run your TC in debug mode.
+ * =====================================================================================================
+ * as soon as you hit "npx playwright test video_17 --debug" this command in terminal with debug mode, it will open "playWright inspector tool".
  */
-// video 17 and 18 are covered here 
 
 const { test, expect } = require('@playwright/test')
 
-test("UI controls", async function ({ browser }) {
+test("playWright inspector", async function ({ browser }) {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
@@ -26,3 +30,4 @@ test("UI controls", async function ({ browser }) {
     await expect(page.locator("//span[text()=' User']/following-sibling::span")).toBeChecked(); // toBeChecked() -. is only for checked
     await page.pause();
 });
+// Note : no need to watch video 22 -> It is record and play

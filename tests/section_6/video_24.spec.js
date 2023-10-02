@@ -24,7 +24,7 @@ test("end to end scenarios", async function ({ browser }) {
     await page.locator(".card-body b").first().waitFor();
     //it will get all the card-body
     const productList = page.locator(".card-body");
-    // so now need to select product "ZARA COAT 3" from the dashboard and add to cart as well
+    // so now need to select product "ZARA COAT 3" from the dashboard and add to cart as well 
     const count =await productList.count();
     console.log(count);
     // dynamically find the element and click on add to cart

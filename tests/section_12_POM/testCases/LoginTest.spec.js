@@ -7,9 +7,9 @@ test("Login Test", async function ({ browser }){
     // first to create the object of login page and pass the "page" via Login page constrauctor
     const loginPage = new Login(page);
     // now you need to land on the login page
-    loginPage.goToLoginPage();
+    await loginPage.goToLoginPage();
     // now you need to enetr userName and password
-    loginPage.validLogin("anshika@gmail.com","Iamking@000");
+    await loginPage.validLogin("anshika@gmail.com","Iamking@000");
 
     await page.locator(".card-body b").first().waitFor();
     //it will get all the card-body

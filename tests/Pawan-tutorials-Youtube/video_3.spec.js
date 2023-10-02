@@ -15,4 +15,5 @@ test('my first test as Home Page', async ({ browser }) => {
     //now we are closing the page-->
     page.close();
 });
+// npx playwright test pawan-tutorials-Youtube/video_3
 

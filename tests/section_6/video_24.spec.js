@@ -1,7 +1,8 @@
+// npx playwright test video_24 --debug
 // No need to watch video 24
-// video 25 and 26 are covered here
+// video 25, 26,27 are covered here
 /**
- * From here we are performing some end to end scenarios
+ * From here we are performing some end to end scenarios and this whole section from 25th to 31st is imp
  */
 //===========================================================================
 const { test, expect } = require('@playwright/test')
@@ -23,7 +24,7 @@ test("end to end scenarios", async function ({ browser }) {
     await page.locator(".card-body b").first().waitFor();
     //it will get all the card-body
     const productList = page.locator(".card-body");
-    // so now need to select product "ZARA COAT 3" from the dashboard and add to cart as well
+    // so now need to select product "ZARA COAT 3" from the dashboard and add to cart as well 
     const count =await productList.count();
     console.log(count);
     // dynamically find the element and click on add to cart
@@ -59,5 +60,31 @@ test("end to end scenarios", async function ({ browser }) {
     break;
    }
 }
+ // From here continuation of video 28-->
+   // this is the validation that email id have similiar text or not which we have passed
+   await expect(page.locator(".user__name label[type='text']")).toHaveText("anshika@gmail.com")
+   //now click on place oreder button
+   await page.locator(".action__submit").click();
+   //now move to anoter page and verify and put an assetion-->
+   await expect(page.locator(".hero-primary")).toHaveText(" Thankyou for the order. ")
+   // got the order Id and print into the console ----> textContent() method used to get the value in console.
+   const orderId = await page.locator(".em-spacer-1 .ng-star-inserted").textContent();
+   console.log(orderId);
+   // now you have to verify that order id is getting displayed on order table or not.
+   // from now video 30 is playing
+   // you need to watch again -. I just keep the code from there, but you have to watch it again
+   await page.locator("button[routerlink*='myorders']").click();
+   await page.locator("tbody").waitFor();
+   const rows =  page.locator("tbody tr");
+
+   for (let i = 0; i < await rows.count(); ++i) {
+      const rowOrderId = await rows.nth(i).locator("th").textContent();
+      if (orderId.includes(rowOrderId)) {
+         await rows.nth(i).locator("button").first().click();
+         break;
+      }
+   }
+   const orderIdDetails = await page.locator(".col-text").textContent();
+   expect(orderId.includes(orderIdDetails)).toBeTruthy();
     await page.pause();
 });

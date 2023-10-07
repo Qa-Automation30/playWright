@@ -14,7 +14,7 @@ test("UI controls", async function ({ browser }) {
      *  so there could be two kinds of dropdowns->
      * 1. which starts with "select" class [can say static dropdown]
      */
-    // so here need to select one value from the drodpwn , so first you have to make a locator of select class
+    // so here need to select value from the drodpwn , so first you have to make a locator of select class
     const dropDown = page.locator("select.form-control");
     // now you need to select the value from the dropdown using pre-defined methods inside the playWright
     await dropDown.selectOption("consult");

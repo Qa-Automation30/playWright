@@ -1,4 +1,4 @@
-
+//https://blog.appmetry.com/qa/building-a-playwright-javascript-framework-with-page-object-model/
 const { test, expect } = require('@playwright/test')
 
 test('my first test as Home Page', async ({ browser }) => {

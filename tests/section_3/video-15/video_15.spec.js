@@ -1,5 +1,6 @@
 // This is very very IMP VIDEO, need to watch again and again
 // need to understand the concept again here
+//Techniques to wait dynamically for new page in Service based applications-->
 
 const { test, expect } = require('@playwright/test')
 
@@ -17,3 +18,5 @@ test("Auto wait fun test", async function ({ browser }) {
     const allTitles = await page.locator(".card-body b").allTextContents();
     console.log(allTitles);
 });
+
+//https://playwright.dev/docs/api/class-page#page-wait-for-navigation

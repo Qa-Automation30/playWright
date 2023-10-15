@@ -1,0 +1,12 @@
+how to get the current working project directory root in java Script as I am doing automation via playWright.
+How to capture a screenshot of an element in playWright and put into a specific location using javaScript
+can you please tell me how to create folder on a specific loaction 
+As I have taken the screenshot of a particular element but I am facing issue while putting that screenshot to a specific folder in project director using playWright java script
+ I have taken one screenshot of an element and put that screenshot into a separate folder, so my requirement is once I will take the screenshot again and need to compare with already put into sperated foler. using PlayWright with java Script
+
+ https://github.com/mapbox/pixelmatch
+ https://github.com/Codeuctivity/ImageSharp.Compare/blob/main/README.md
+
+
+ https://www.youtube.com/watch?v=kyAeH-7lAL4
+ https://www.youtube.com/watch?v=2o6QTY2ZLT8

@@ -18,8 +18,7 @@ page.getByTestId() to locate an element based on its data-testid attribute (othe
 
 // Note : Should watch this video again and again for more understanding.
 
-import {test,expect} from '@playwright/test'  // We can import like in this way as well. 
-// Note : above two lines of code do the same thing
+import {test,expect} from '@playwright/test'
 
 test('Locators', async ({ browser }) => {
     // Locator concepts -->

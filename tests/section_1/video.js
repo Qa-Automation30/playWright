@@ -11,3 +11,9 @@
      * 
      * video 6 you need to watch again to create the project.
      */
+    //==========================================================================
+    /**
+     * Video 6 is also coverd here no need to watch again-->
+     * So first you need to create a folder in your windowsw with anyName and then open it into visual studio.
+     * Now open the terminal in visual studio.--> "npm init playwright"
+     */

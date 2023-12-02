@@ -17,7 +17,7 @@ test("second test", async function({browser}){
    // Note : the above browser information should be provided via "playwright.config.js" file. Means which browser you need to launch
    // So very first step you need to do set a "newcontext".
    // What is newContext here--> this method will help you to open a fresh browser without having cookies and plugins. [This will be like incoginto mode]
-   const context = await browser.newContext(); // This will just open the instance of the browser only but not the page.
+   const context = await browser.newContext(); // This will just open the instance of the browser only, but not the page.
    // so now you need to have a page from the context, so below setp is for the same.
   const page = await context.newPage(); // this newPage() method is responsible to on which you can perform your automation, means on this page you can hot your URL.
   await page.goto("https://rahulshettyacademy.com/"); // goto method is used for launch the browser

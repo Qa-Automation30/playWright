@@ -26,7 +26,7 @@ test("valid userName and password test", async function ({ browser }) {
     // here why used the nth(0) -> so the answer is, the selector you have written here will return the number of webElements and you only need 1st one so use ".nth(0)".
     const meassge = await page.locator(".card-body a").nth(0).textContent();
     /**
-     * Note : if you want to access first eelement from all you can also use .first() inplace of .nth(0)
+     * Note : if you want to access first element from all you can also use .first() inplace of .nth(0)
      * like this way--> "const meassge = await page.locator(".card-body a").first().textContent();"
      * ===============================================================================================
      * Note : You dont have any kind of second() of third() one, you have only first() and last() method to extract webElements fron list

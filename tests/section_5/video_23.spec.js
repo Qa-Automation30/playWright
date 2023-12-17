@@ -14,4 +14,4 @@
     screenshot:'on',
   },
  */
-// Need to watch it again and make notes out of it
+// Need to watch it again as can not make notes out of it

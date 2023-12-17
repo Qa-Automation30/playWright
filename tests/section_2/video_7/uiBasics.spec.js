@@ -5,7 +5,8 @@
 /**
  *  Second point is that you need to write your test cases inside the tests folder. This is some Kind of rule.
  */
-// 1st you have to import one annotation from playWright module. So all modules are lying inside the node_modules >> @playWright/test.
+// 1st you have to import one annotation from playWright module. 
+//So all modules are lying inside the node_modules >> @playWright/test.
 // like this --> const {test} = require('@playwright/test');
 // This is like JAR files like Selenium JARs
 // So we are importing test annoation from PlayWright Jars
@@ -17,7 +18,8 @@ const {test} = require('@playwright/test');
 // So inside that function you need to write your Automation code.
 test("first playWright TC",function(){
 // So inside that you can write your playWright code...
-// Second Imp point is -> Java Script is Asynchronous -> What does it mean ?--> It means that in JS code will not execute in sequence.
+// Second Imp point is -> Java Script is Asynchronous -> What does it mean ?--> 
+//It means that in JS code will not execute in sequence.
 // It means that line by line.
 /**
  *  Suppose in your code there are 3 steps like this ->

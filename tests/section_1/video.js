@@ -2,7 +2,7 @@
  * This section is all about how to setup the env for playWright and run the testCases.
  */
 /**
-     * 1-> So we are using "javascript" code for writing our test case, so that is why we need to have a platform to run JS code.
+     * 1-> So we are using "javascript" for writing our test case, so that is why we need to have a platform to run JS code.
      * so for JS code-> "node.js" platform engine is required, which supports JS related code.
      * ==========================================================================================
      * so first you need to install the "node js" from the website for winodws application. >> afterdownload you need to install the nodeSoftware.

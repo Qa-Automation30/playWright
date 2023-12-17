@@ -18,7 +18,7 @@ test("end to end scenarios", async function ({ browser }) {
     await page.locator("[type='submit']").click();
     // this below line is very imp and need to underStand the concept of waitFor()
     /**
-     * So here the catch is, if your locator is returning morethan one element and you need ti put a wait condition on it, so for that you have to either use first() or nth() or last().
+     * So here the catch is, if your locator is returning more than one element and you need to put a wait condition on it, so for that you have to either use first() or nth() or last().
      * because the reason is waitFor() only works with single element. If you want to see the error you have to remove first() and then try to execute it
      */
     await page.locator(".card-body b").first().waitFor();
@@ -47,7 +47,7 @@ test("end to end scenarios", async function ({ browser }) {
    await page.locator("//button[text()='Checkout']").click()
    // so now the catch is here dynamic dropdown--> how to handle it
    // .type("india",{delay:200})  -> this is concpet where you need to type on some delay
-   await page.locator("[placeholder='Select Country']").type("in",{delay:200})
+   await page.locator("[placeholder='Select Country']").pressSequentially("in",{delay:200})
    // so now wait until the suggestion box gets open
    const dropdown =  page.locator("section.ta-results");
    await dropdown.waitFor();
